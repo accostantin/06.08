@@ -1,0 +1,47 @@
+/*padronizção das cores por variáveis*/
+:root{
+--Azul:#0044AF;
+--Vermelho:#FF0122;
+--Amarelo:#FFAF00;
+}
+
+#vertical .container{
+width: 400px;
+height: 350px;
+display: grid;
+grid-template-columns: repeat(3,33%);
+grid-template-rows: repeat(1,350px);
+border: 1px solid black;
+grid-column-gap: 1px;
+grid-row-gap: 1px
+}
+#vertical .container .item1{
+background-color: var(--Vermelho);
+}
+#vertical .container .item2{
+background-color: var(--Amarelo);
+}
+#vertical .container .item3{
+background-color: var(--Azul);
+}
+
+#horizontal .container{
+    width: 400px;
+    height: 350px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1,400px);
+    grid-template-rows: repeat(3,33%);
+    border: 1px solid black;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px
+    }
+#horizontal .container .item1{
+    background-color: var(--Vermelho);
+    }
+    #horizontal .container .item2{
+    background-color: var(--Amarelo);
+    }
+    #horizontal .container .item3{
+    background-color: var(--Azul);
+    }
